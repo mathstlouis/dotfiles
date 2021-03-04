@@ -4,7 +4,7 @@ SHELL_NAME=$(basename $SHELL)
 
 # Auto complete, for bash replace zsh with bash
 # For some reason this is sourcing the oh-my-zsh plugin.
-source <(kubectl completion $SHELL_NAME)
+#source <(kubectl completion $SHELL_NAME)
 
 # Contexts
 alias kcc='kubectl config get-contexts'
