@@ -28,6 +28,10 @@ do
   source $file
 done
 
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh
+
+
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -U compinit
 compinit
@@ -51,8 +55,9 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
 source ~/.fzf-tab/fzf-tab.plugin.zsh
-source <(stern --completion=zsh)
+
 eval "$(starship init zsh)"
 
 
@@ -62,3 +67,7 @@ if [ -f '/Users/mathieu/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mathieu
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/mathieu/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mathieu/google-cloud-sdk/completion.zsh.inc'; fi
 if [ -e /Users/mathieu/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/mathieu/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+export PATH="$HOME/.nodenv/bin:$PATH"
+
+eval "$(nodenv init -)"
+

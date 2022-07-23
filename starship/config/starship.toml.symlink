@@ -9,16 +9,16 @@ disabled = true
 [directory]
 truncation_length = 3
 
+[aws]
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+style = "bold blue"
+[aws.region_aliases]
+
 [memory_usage]
 disabled = false
 threshold = -1
 symbol = " "
 style = "bold dimmed green"
-
-[env_var]
-variable = "GOOGLE_APPLICATION_CREDENTIALS"
-default = "empty GAC"
-style = "fg:green bg:black"
 
 [kubernetes]
 symbol = "⛵ "
