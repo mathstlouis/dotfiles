@@ -1,3 +1,4 @@
-alias l="ls -F"
-alias ll="ls -lh"
-alias la="ls -lha"
+alias ls="ls -F"
+alias l="ls -lAh"
+alias ll="ls -l"
+alias la='ls -A'

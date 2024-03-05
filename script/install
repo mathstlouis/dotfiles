@@ -6,5 +6,13 @@ set -e
 
 cd "$(dirname $0)"/..
 
+echo "› brew bundle"
+brew bundle
+
+#echo 'Installing NerdFonts'
+#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mcarvalho1/Nerd-fonts-Downloader-Script/master/nf_downloader.sh)"
+
 # find the installers and run them iteratively
 find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+
+

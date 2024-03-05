@@ -1,6 +1,0 @@
-#/bin/bash
-
-
-
-kubectl get pods -o jsonpath="{..image}" | tr -s '[[:space:]]' '\n' | grep gcr.io | sort | uniq
-
