@@ -55,5 +55,6 @@ source ~/.fzf-tab/fzf-tab.plugin.zsh
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
+eval "$(mcfly init zsh)"
 
 
