@@ -13,6 +13,7 @@ brew 'tealdeer'
 brew 'bat'
 brew 'mcfly'
 brew 'dog'
+brew 'telnet'
 
 cask 'webstorm'
 cask 'visual-studio-code'
