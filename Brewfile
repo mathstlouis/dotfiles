@@ -17,3 +17,4 @@ brew 'telnet'
 
 cask 'webstorm'
 cask 'visual-studio-code'
+cask 'logitech-g-hub'
