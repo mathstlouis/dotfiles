@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # Run all dotfiles installers.
+BYellow='\033[1;33m'
+NC='\033[0m'
 
 set -e
 
@@ -33,7 +35,7 @@ fi
 
 
 
-echo "› brew bundle"
+echo -e "${BYellow}  › brew bundle${NC}"
 brew bundle
 
 #echo 'Installing NerdFonts'
