@@ -1,5 +1,3 @@
-function kubectl() { echo "+ kubectl $@">&2; command kubectl $@; }
-
 alias k='kubectl'
 alias ksys='kubectl --namespace=kube-system'
 alias ka='kubectl apply --recursive -f'
