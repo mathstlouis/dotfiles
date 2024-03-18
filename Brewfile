@@ -21,6 +21,8 @@ brew 'awscli'
 brew 'kubie'
 brew 'Azure/kubelogin/kubelogin'
 brew 'azure-cli'
+brew 'terraform'
+brew 'terragrunt'
 
 cask 'webstorm'
 cask 'visual-studio-code'
