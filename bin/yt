@@ -2,8 +2,8 @@
 #
 # Downloads the embedded video on any web page straight to the desktop.
 #
-# youtube-dlp, which is awesome:
-#   https://github.com/yt-dlp/yt-dlp
+# youtube-dl, which is awesome:
+#   https://rg3.github.io/youtube-dl/
 #
 
-cd ~/Desktop && yt-dlp -S "ext" "$1"
+cd ~/Desktop && youtube-dl "$1"
