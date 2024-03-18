@@ -1,3 +1,5 @@
+alias kctx='kubie ctx'
+alias kns='kubie ns'
 alias k='kubectl'
 alias ksys='kubectl --namespace=kube-system'
 alias ka='kubectl apply --recursive -f'
