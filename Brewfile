@@ -23,6 +23,8 @@ brew 'Azure/kubelogin/kubelogin'
 brew 'azure-cli'
 brew 'terraform'
 brew 'terragrunt'
+brew 'jq'
+brew 'kubent'
 
 cask 'webstorm'
 cask 'visual-studio-code'
