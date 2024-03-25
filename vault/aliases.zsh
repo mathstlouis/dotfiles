@@ -1,0 +1,1 @@
+alias vtl='vault token lookup'
