@@ -8,3 +8,15 @@ function check-addon {
     --kubernetes-version $2 \
     --output json | jq 'flatten'
 }
+
+function aws-profile {
+  local profile=$1
+
+  unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
+
+  if [[ "$profile" != "" ]]; then
+      export AWS_PROFILE="$profile"
+  else
+      export AWS_PROFILE=$(aws configure list-profiles | fzf)
+  fi
+}
