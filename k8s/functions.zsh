@@ -12,3 +12,8 @@ function kinspect() {
 function kgK() {
         kubectl get Kustomization -n flux-system -o json | jq -r '.items[] |[.metadata.name,.spec.suspend,.status.conditions[0].lastTransitionTime,.status.conditions[0].message] | @tsv' | column -ts $'\t'
 }
+
+function im() {
+  kubectl get pods -n "$1" -o=jsonpath='{range .items[*]}{"\n"}{.metadata.name}{":\t"}{range .spec.containers[*]}{.image}{", "}{end}{end}' |\
+  sort
+}

@@ -2,5 +2,6 @@
 
 
 
-kubectl get pods -o jsonpath="{..image}" | tr -s '[[:space:]]' '\n' | grep gcr.io | sort | uniq
+kubectl get pods -n "$1" -o=jsonpath='{range .items[*]}{"\n"}{.metadata.name}{":\t"}{range .spec.containers[*]}{.image}{", "}{end}{end}' |\
+sort
 
